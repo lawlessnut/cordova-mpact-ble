@@ -1,22 +1,23 @@
-# Cordova Hello World Plugin
+# Cordova MPact BLE Plugin
 
-Simple plugin that returns your string prefixed with hello.
+MPact SDK ble plugin for javascript api that provide native interface to MPact SDK ble client. User can use this plugin to talk MPact SDK native interface for Android and iOS using javascript interface.
 
-Greeting a user with "Hello, world" is something that could be done in JavaScript. This plugin provides a simple example demonstrating how Cordova plugins work.
+User require to obtain MPact SDK library for Adnroid and iOS in-order to determine ble device
+
 
 ## Using
 Clone the plugin
 
-    $ git clone https://github.com/don/cordova-plugin-hello.git
+    $ git clone https://github.com/lawlessnut/cordova-mpact-ble.git
 
 Create a new Cordova Project
 
-    $ cordova create hello com.example.helloapp Hello
+    $ cordova create <your_project> com.example.<your_project> <project_name>
     
 Install the plugin
 
-    $ cd hello
-    $ cordova plugin add ../cordova-plugin-hello
+    $ cd <your_project>
+    $ cordova plugin add https://github.com/lawlessnut/cordova-mpact-ble.git
     
 
 Edit `www/js/index.js` and add the following code inside `onDeviceReady`
@@ -30,7 +31,7 @@ Edit `www/js/index.js` and add the following code inside `onDeviceReady`
         alert("Error calling Hello Plugin");
     }
 
-    hello.greet("World", success, failure);
+    mpactble.deviceready("World", success, failure);
 ```
 
 Install iOS or Android platform
