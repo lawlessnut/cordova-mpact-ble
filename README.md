@@ -45,12 +45,11 @@ Run the code
 
 ## API
 #Methods
-
-mpactble.connectServer
-mpactble.deviceready
-mpactble.services
-mpactble.startScan
-mpactble.stopScan
+*mpactble.connectServer
+*mpactble.deviceready
+*mpactble.services
+*mpactble.startScan
+*mpactble.stopScan
 
 
 # cordova-mpact-ble
